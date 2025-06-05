@@ -1,0 +1,73 @@
+basic:
+    name: Lokker
+    environments:
+        production: 'https://lokker.com/'
+        staging: 'https://lokkerstaging.wpengine.com/'
+        development: ''
+    basicAuth:
+        production: { user: '', password: '' }
+        staging: { user: '', password: '' }
+        development: null
+    breakpoints:
+        - 640
+        - 1024
+        - 1200
+    pages:
+        - /
+        - /online-privacy-solutions/detection-monitoring
+        - /online-privacy-solutions/protection-blocking
+        - /online-privacy-solutions/privacy-edge-consent-management-platform
+        - /web-privacy-audit-request
+        - /consent-verification-report-request
+        - /online-data-privacy-report-march-2024
+        - /online-privacy-software-for-healthcare
+        - /data-privacy-software-for-insurers
+        - /online-privacy-software-for-law-firms
+        - /online-privacy-resources
+        - /category/article
+        - /category/in-the-news
+        - /category/press-releases
+        - /category/video
+        - /category/white-paper
+        - /about
+        - /careers-at-lokker
+        - /news-and-media
+        - /privacy-teams
+        - /tag/privacyteams
+        - /author/randy
+        - /category/blog
+        - /category/uncategorized
+        - /understanding-vppa-privacy-risks
+        - /tag/consumer-privacy
+        - /2025/04/15
+        - /terms-of-use
+        - /security
+        - /privacy-policy
+    monitoring:
+        days: {  }
+        type: ''
+        schedule_time: '12:30 AM'
+        schedule_time_zone: Europe/London
+        compare_with: last-production
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    delay: 15
+    scroll: true
+    headers:
+        - { header: '', value: '' }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content: ''
+    sensitivity: 15
+    night_mode: false
+    retina_images: false
+    single_ip: false
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: true
